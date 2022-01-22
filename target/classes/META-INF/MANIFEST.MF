@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: KYL
+Build-Jdk: 15.0.1
+Implementation-Title: myAPI
+Implementation-Version: 1.5.4.RELEASE
+Implementation-Vendor-Id: KMoneyAPI
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-URL: http://projects.spring.io/spring-boot/myAPI/
+Created-By: Maven Integration for Eclipse
+

@@ -1,0 +1,49 @@
+spring.profiles.active: development
+logging.config: classpath:logback-spring.xml
+
+spring:
+  application:
+    name: KMoneyAPI 
+  http:
+    multipart:
+      max-file-size: 5242880
+      max-request-size: 8388608
+  jpa:    show-sql: true
+
+tomcat.ajp.protocol : AJP/1.3
+tomcat.ajp.enabled : true
+
+#spring.datasource.url : jdbc:h2:file:~/test
+#spring.datasource.driverClassName : org.h2.Driver
+#spring.datasource.username : sa
+#spring.datasource.password :
+#spring.jpa.database-platform : org.hibernate.dialect.H2Dialect
+# 
+## Enabling H2 Console
+#spring.h2.console.enabled : true
+# 
+## Custom H2 Console URL
+#spring.h2.console.path : /h2-console
+#spring.jpa.hibernate.ddl-auto : auto
+
+---
+spring.profiles: development
+server.port: 8213
+tomcat.ajp.port : 8013
+
+
+
+---
+spring.profiles: staging
+server.port: 8213
+
+tomcat.ajp.port : 8013
+
+
+
+---
+spring.profiles: production
+server.port: 8212
+
+tomcat.ajp.enabled : true
+
